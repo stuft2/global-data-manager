@@ -1,6 +1,6 @@
 {
   "name": "global-data-manager",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Save project-global variables in one location, manage and access them anywhere",
   "main": "index.js",
   "directories": {
