@@ -1,0 +1,36 @@
+{
+  "name": "global-data-manager",
+  "version": "0.0.0",
+  "description": "Save project-global variables in one location, manage and access them anywhere",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerTuft/global-data-manager.git"
+  },
+  "keywords": [
+    "[",
+    "\"global\"",
+    "\"data\"",
+    "\"store\"",
+    "\"save\"",
+    "\"variables\"",
+    "\"manager\"",
+    "]"
+  ],
+  "author": "Spencer Tuft",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SpencerTuft/global-data-manager/issues"
+  },
+  "homepage": "https://github.com/SpencerTuft/global-data-manager#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
