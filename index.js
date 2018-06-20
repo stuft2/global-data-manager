@@ -1,11 +1,11 @@
-let global_data = []
-let count = 0
+let global_data = {}
 
 class Manager {
-  constructor () {
-    this.id = count
-    count++
-    global_data.push({})
+  constructor (id) {
+    if (!id) throw new Error('Missing Manager ID parameter')
+    if (!isStr(id) && !isNum(id)) throw new Error('Manager ID parameter must be string or number')
+    this.id = id
+    global_data[this.id] = {}
   }
 }
 
@@ -15,6 +15,13 @@ class Manager {
  * @returns {boolean}
  */
 const isStr = (val) => typeof val === 'string'
+
+/**
+ * Checks if the value is a number
+ * @param val
+ * @returns {boolean}
+ */
+const isNum = (val) => typeof val === 'number'
 
 /**
  * Initializes multiple variables by calling the set method for each array element.
