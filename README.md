@@ -25,12 +25,12 @@ rename - Rename a property without changing the value
 ```
 const Manager = require('global-silo-manager')
 
-const store1 = new Manager()
-const store2 = new Manager()
+const store1 = new Manager(1)
+const store2 = new Manager(2)
 
 store1.put('id', 1)
 store2.put('id', 2)
 
-store1.fetch('id') // returns 1
-store2.fetch('id') // returns 2
+store1.all() // returns { id: 1 }
+store2.all() // returns { id: 2 }
 ```
